@@ -1,5 +1,11 @@
-from logic import check_winner
-
+from logic import check_winner, get_empty_board, print_board, get_player_input, switch_player
+import logging
+# add the log file record the games 
+logging.basicConfig(
+    filename='logs/msg.log',
+    level=logging.INFO
+)
+    
 
 def get_empty_board():
     """
